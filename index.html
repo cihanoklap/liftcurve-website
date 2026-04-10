@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>LiftCurve LLC | Mobile UA Consulting & Software Solutions</title>
-    <meta name="description" content="LiftCurve LLC provides mobile user acquisition consulting and software solutions. Home of scaling.games.">
+    <meta name="description" content="LiftCurve LLC provides mobile user acquisition consulting and software solutions. Home of scaling.games and Creative Uploader.">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
@@ -164,6 +164,16 @@
             gap: 60px;
         }
 
+        .product-content + .product-content {
+            margin-top: 80px;
+            padding-top: 80px;
+            border-top: 1px solid #eee;
+        }
+
+        .product-content--reverse {
+            flex-direction: row-reverse;
+        }
+
         .product-text {
             flex: 1;
         }
@@ -242,7 +252,8 @@
                 font-size: 2rem;
             }
 
-            .product-content {
+            .product-content,
+            .product-content--reverse {
                 flex-direction: column;
             }
 
@@ -277,6 +288,7 @@
 
     <section class="product" id="product">
         <div class="container">
+            <h2 class="section-title">Products</h2>
             <div class="product-content">
                 <div class="product-text">
                     <h2>Scaling Games</h2>
@@ -285,8 +297,19 @@
                 </div>
                 <div class="product-visual">
                     <a href="https://scaling.games" target="_blank">
-                        <!-- Replace the src below with your screenshot -->
                         <img src="screenshot.png" alt="Scaling Games Platform Screenshot" class="product-screenshot">
+                    </a>
+                </div>
+            </div>
+            <div class="product-content product-content--reverse">
+                <div class="product-text">
+                    <h2>Creative Uploader</h2>
+                    <p>Bulk upload ad creatives from Google Drive or Dropbox directly to YouTube, Google UAC, Meta, and AppLovin — all in one workflow.</p>
+                    <a href="https://app.liftcurve.com" class="cta-button" target="_blank">Visit app.liftcurve.com</a>
+                </div>
+                <div class="product-visual">
+                    <a href="https://app.liftcurve.com" target="_blank">
+                        <img src="creative-upload-screenshot.png" alt="Creative Uploader Screenshot" class="product-screenshot">
                     </a>
                 </div>
             </div>
